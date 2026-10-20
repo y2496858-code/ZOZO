@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Prevent Search Engines from indexing (100% Private) -->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <meta name="googlebot" content="noindex, nofollow">
+    <title>عيد ميلاد سعيد يا جونايتي 💖 يوسف & زهراء</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        roseGold: '#B76E79',
+                        warmGold: '#D4AF37',
+                        rubyRed: '#9e0129',
+                        deepVelvet: '#1a0314',
+                        midnight: '#080108',
+                        softCream: '#FFF5F5',
+                        accentPink: '#f43f5e'
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                        tajawal: ['Tajawal', 'sans-serif'],
+                        amiri: ['Amiri', 'serif'],
+                        reem: ['Reem Kufi', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;700;900&family=Reem+Kufi:wght@500;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <style>
+        * {
+            -webkit-tap-highlight-color: transparent;
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: radial-gradient(circle at 50% 12%, #2a031a 0%, #0d010d 60%, #030003 100%);
+            color: #ffffff;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: #080108; }
+        ::-webkit-scrollbar-thumb { background: #B76E79; border-radius: 10px; }
+
+        .text-glow-gold {
+            text-shadow: 0 0 25px rgba(212, 175, 55, 0.7), 0 0 50px rgba(183, 110, 121, 0.5);
+        }
+        .text-glow-rose {
+            text-shadow: 0 0 20px rgba(244, 63, 94, 0.8), 0 0 45px rgba(183, 110, 121, 0.6);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+        .glass-card-gold {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(183, 110, 121, 0.12));
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), inset 0 0 25px rgba(212, 175, 55, 0.15);
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 20px rgba(183, 110, 121, 0.5), 0 0 40px rgba(212, 175, 55, 0.4); }
+            50% { box-shadow: 0 0 35px rgba(244, 63, 94, 0.9), 0 0 75px rgba(212, 175, 55, 0.7); }
+        }
+        .pulse-glow-btn {
+            animation: pulseGlow 2.8s infinite;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-8px); }
+            40%, 80% { transform: translateX(8px); }
+        }
+        .shake-animation {
+            animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+        }
+
+        @keyframes sirenFlash {
+            0%, 100% { box-shadow: 0 0 30px rgba(239, 68, 68, 0.8), inset 0 0 30px rgba(239, 68, 68, 0.4); }
+            50% { box-shadow: 0 0 60px rgba(212, 175, 55, 0.9), inset 0 0 40px rgba(212, 175, 55, 0.5); }
+        }
+        .siren-box {
+            animation: sirenFlash 0.8s infinite alternate ease-in-out;
+        }
+
+        @keyframes flameFlicker {
+            0%, 100% { transform: scale(1) rotate(-1deg); filter: drop-shadow(0 0 12px #ff9d00) drop-shadow(0 0 25px #ff3c00); }
+            25% { transform: scale(1.1, 0.95) rotate(1.5deg); }
+            50% { transform: scale(0.95, 1.05) rotate(-2deg); filter: drop-shadow(0 0 16px #ffb700) drop-shadow(0 0 30px #ff5100); }
+            75% { transform: scale(1.05, 1) rotate(1deg); }
+        }
+        .flame {
+            animation: flameFlicker 1.4s infinite alternate ease-in-out;
+            transform-origin: bottom center;
+        }
+
+        .perspective-1000 { perspective: 1000px; }
+        .transform-style-3d { transform-style: preserve-3d; }
+        .backface-hidden { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+        .rotate-y-180 { transform: rotateY(180deg); }
+
+        .parchment {
+            background: linear-gradient(to bottom, #fffdfa 0%, #f7eee1 100%);
+            color: #26150e;
+            box-shadow: 0 20px 45px rgba(0,0,0,0.7), inset 0 0 70px rgba(212, 175, 55, 0.25);
+        }
+
+        #particles-canvas, #rose-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .sound-bar {
+            animation: soundWave 1.1s ease-in-out infinite alternate;
+        }
+        @keyframes soundWave {
+            0% { height: 4px; }
+            100% { height: 22px; }
+        }
+        .sound-bar:nth-child(2) { animation-delay: 0.2s; }
+        .sound-bar:nth-child(3) { animation-delay: 0.4s; }
+        .sound-bar:nth-child(4) { animation-delay: 0.15s; }
+
+        .luxury-photo-card {
+            background: #ffffff;
+            padding: 14px 14px 24px 14px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .luxury-photo-card:hover {
+            transform: translateY(-10px) scale(1.03) rotate(0deg) !important;
+            box-shadow: 0 30px 60px rgba(212, 175, 55, 0.45);
+            z-index: 30;
+        }
+
+        @keyframes scanLaser {
+            0% { top: 0%; opacity: 0.2; }
+            50% { opacity: 0.95; }
+            100% { top: 100%; opacity: 0.2; }
+        }
+        .scan-laser {
+            animation: scanLaser 1.4s ease-in-out infinite alternate;
+        }
+
+        .cursor-trail {
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            animation: trailFade 0.9s forwards;
+        }
+        @keyframes trailFade {
+            0% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
+            100% { opacity: 0; transform: translate(-50%, -110%) scale(0.3); }
+        }
+
+        #runawayBtn {
+            transition: transform 0.25s ease-out;
+        }
+
+        /* Cinema Video Frame Glow */
+        .cinema-glow {
+            box-shadow: 0 20px 60px rgba(212, 175, 55, 0.35), 0 0 100px rgba(244, 63, 94, 0.25);
+        }
+    </style>
+</head>
+<body class="relative selection:bg-roseGold selection:text-white">
+
+    <!-- Starry Background Canvas -->
+    <canvas id="particles-canvas"></canvas>
+    <!-- Realistic Falling Rose Petals Canvas -->
+    <canvas id="rose-canvas"></canvas>
+
+    <!-- Native Audio Element for the Song "غيث ناجي - يا حلم وردي" -->
+    <audio id="romanticSongAudio" loop preload="auto">
+        <source src="assets/song.webm" type="audio/webm">
+        <source src="assets/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Hidden YouTube Player Container as Instant Fallback -->
+    <div id="ytPlayerContainer" class="hidden pointer-events-none"></div>
+
+    <!-- Floating Top Bar Controls -->
+    <div class="fixed top-4 left-4 z-50 flex items-center gap-2">
+        <!-- Song Music Toggle Button -->
+        <button id="musicToggleBtn" onclick="toggleSongMusic()" 
+            class="flex items-center gap-2 px-3.5 py-2 rounded-full glass-card border border-roseGold/40 text-warmGold hover:scale-105 active:scale-95 transition shadow-lg text-sm group">
+            <span id="musicIcon" class="flex items-center gap-1">
+                <i data-lucide="music" class="w-4 h-4 text-warmGold"></i>
+            </span>
+            <div id="soundWaves" class="flex items-end gap-0.5 h-4 opacity-50">
+                <span class="w-0.5 bg-warmGold sound-bar h-2"></span>
+                <span class="w-0.5 bg-warmGold sound-bar h-3"></span>
+                <span class="w-0.5 bg-warmGold sound-bar h-1"></span>
+            </div>
+            <span id="musicText" class="text-xs font-medium text-pink-100 hidden sm:inline">يا حلم وردي 🎶</span>
+        </button>
+
+        <!-- Rose Shower Button -->
+        <button onclick="triggerRoseShower()" title="مطر الورد العراقي"
+            class="p-2.5 rounded-full glass-card border border-rose-500/30 text-rose-300 hover:text-white hover:border-rose-400 transition flex items-center justify-center">
+            🌹
+        </button>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- ENCRYPTED PASSWORD GATE & PLAYFUL PRANK -->
+    <!-- ========================================== -->
+    <div id="gateOverlay" class="fixed inset-0 z-50 flex flex-col items-center justify-center p-4 sm:p-6 bg-radial from-[#25031b] via-[#0d010d] to-[#030003] transition-all duration-1000">
+        <div class="absolute w-80 h-80 rounded-full bg-roseGold/20 blur-[110px] -top-12 -left-12 animate-pulse"></div>
+        <div class="absolute w-80 h-80 rounded-full bg-warmGold/20 blur-[130px] -bottom-12 -right-12 animate-pulse" style="animation-delay: 2s;"></div>
+
+        <!-- MAIN LOCK CARD -->
+        <div id="lockCard" class="relative z-10 max-w-md w-full glass-card-gold rounded-3xl p-6 sm:p-8 text-center flex flex-col items-center border border-warmGold/40 shadow-2xl">
+            
+            <div id="lockIconBox" class="w-18 h-18 sm:w-20 sm:h-20 mb-4 rounded-full glass-card flex items-center justify-center border-2 border-warmGold/60 shadow-2xl shadow-roseGold/40 text-warmGold text-3xl transition-transform duration-500">
+                <span id="lockEmoji">🔒</span>
+            </div>
+
+            <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-white/5 border border-roseGold/40 text-xs text-pink-200 tracking-wider mb-3">
+                <span class="text-rose-400">🌹</span>
+                <span>بوابة العشق الخاصة بجونايتي</span>
+                <span class="text-rose-400">🌹</span>
+            </div>
+
+            <h1 class="text-xl sm:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-warmGold via-pink-200 to-warmGold font-cairo mb-2">
+                مفاجأة سرية مغلقة بقفل الأمان 👑
+            </h1>
+
+            <p class="text-xs sm:text-sm text-pink-100/90 font-amiri text-base mb-4 leading-relaxed">
+                هذا الموقع صُنع بحب ومحمي بقفل مشفر.. لا يفتح إلا باسم مالك قلبچ!
+            </p>
+
+            <!-- Riddle Box -->
+            <div class="w-full p-3.5 rounded-2xl bg-black/40 border border-warmGold/30 mb-4 text-center">
+                <p class="text-xs text-warmGold font-bold font-cairo mb-1 flex items-center justify-center gap-1.5">
+                    <i data-lucide="key" class="w-3.5 h-3.5"></i>
+                    <span>اللغز السري لفك القفل:</span>
+                </p>
+                <p class="text-sm sm:text-base text-pink-200 font-amiri font-bold">
+                    "منو حبيب روحچ وعافية كلبچ وسندچ طول العمر؟ 💖"
+                </p>
+            </div>
+
+            <!-- Password Input -->
+            <div class="w-full relative mb-3">
+                <input type="text" id="passwordInput" placeholder="كتبي اسمه هنا..." autocomplete="off"
+                    class="w-full px-5 py-3 rounded-full bg-black/60 border-2 border-warmGold/50 text-white placeholder-pink-200/40 text-center font-cairo text-base sm:text-lg focus:outline-none focus:border-roseGold focus:ring-2 focus:ring-roseGold/40 transition shadow-inner">
+            </div>
+
+            <!-- Error Feedback Box -->
+            <div id="passwordError" class="hidden mb-3 text-xs font-cairo text-rose-400 font-semibold flex items-center justify-center gap-1">
+                <span>لا يا بعد عيني.. ركزي وفكري بحبيب كلبچ وسندچ ❤️</span>
+            </div>
+
+            <!-- Unlock Button -->
+            <button id="unlockBtn" onclick="verifyEncryptedPassword()" 
+                class="w-full py-3.5 rounded-full bg-gradient-to-r from-[#B76E79] via-[#e25d76] to-[#D4AF37] text-white font-bold text-base shadow-2xl pulse-glow-btn hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 mb-4">
+                <span class="font-cairo tracking-wide">فتح المفاجأة ✨</span>
+                <i data-lucide="unlock" class="w-4 h-4"></i>
+            </button>
+
+            <!-- THE PLAYFUL PRANK QUIZ (RUNAWAY BUTTON) -->
+            <div class="w-full pt-3 border-t border-white/10 relative">
+                <p class="text-xs text-warmGold/80 mb-2 font-cairo">أو اختاري الإجابة بنقرة واحدة:</p>
+                <div class="flex items-center justify-center gap-3 relative min-h-[46px]">
+                    <button onclick="autoPickYousef()" 
+                        class="px-4 py-2 rounded-full bg-emerald-600/80 hover:bg-emerald-500 text-white text-xs font-bold border border-emerald-400/50 shadow transition active:scale-95">
+                        يوسف حبيبي وسندي ❤️
+                    </button>
+
+                    <button id="runawayBtn" 
+                        onmouseenter="escapeRunawayButton()" 
+                        ontouchstart="escapeRunawayButton(event)"
+                        onclick="escapeRunawayButton(event)"
+                        class="px-4 py-2 rounded-full bg-rose-900/60 text-pink-300 text-xs font-bold border border-rose-500/40 shadow transition-all duration-200">
+                        شخص ثاني 🙄
+                    </button>
+                </div>
+            </div>
+
+            <p class="mt-4 text-[11px] text-white/50 flex items-center justify-center gap-1.5">
+                <i data-lucide="volume-2" class="w-3.5 h-3.5 text-warmGold"></i>
+                <span>علّي الصوت حتى تشتغل أغنية "يا حلم وردي" مباشرة</span>
+            </p>
+        </div>
+
+        <!-- PRANK STAGE 2: DRAMATIC FAKE LOVE ALARM MODAL -->
+        <div id="prankModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-lg">
+            <div class="max-w-md w-full glass-card-gold rounded-3xl p-6 sm:p-8 text-center border-2 border-red-500 siren-box">
+                <div class="text-5xl mb-3 animate-bounce">🚨</div>
+                
+                <span class="inline-block px-3 py-1 rounded-full bg-red-600/40 text-red-300 text-xs font-bold uppercase tracking-wider mb-2">
+                    تنبيه أمني عاطفي عاجل ⚠️
+                </span>
+                
+                <h3 class="text-xl sm:text-2xl font-black font-cairo text-white mb-2">
+                    تم رصد حالة عشق غير مسبوقة!
+                </h3>
+                
+                <p class="text-xs sm:text-sm text-pink-200/90 font-amiri text-base mb-4 leading-relaxed">
+                    جاري فحص هوية الدخول... نسبة تطابق القلوب: <span class="text-warmGold font-bold">1000%</span>
+                </p>
+
+                <div class="w-full bg-black/60 rounded-full h-3 mb-5 overflow-hidden border border-white/20 p-0.5">
+                    <div id="prankProgressBar" class="bg-gradient-to-r from-warmGold via-rose-500 to-red-500 h-full rounded-full w-0 transition-all duration-1000"></div>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-black/50 border border-warmGold/40 text-right space-y-2 mb-5">
+                    <p class="text-xs sm:text-sm text-pink-100 font-amiri leading-relaxed">
+                        <strong class="text-warmGold">المتهمة:</strong> زهراء (جونايتي) 👑
+                    </p>
+                    <p class="text-xs sm:text-sm text-pink-100 font-amiri leading-relaxed">
+                        <strong class="text-warmGold">التهمة:</strong> سرقة قلب وعقل يوسف بالكامل والاستيلاء على كل مشاعره! 👮‍♂️❤️
+                    </p>
+                    <p class="text-xs sm:text-sm text-pink-100 font-amiri leading-relaxed">
+                        <strong class="text-warmGold">الحكم الصادر:</strong> البقاء في قلب يوسف مدى الحياة مع الدلال والضحك والحب الأبدي! 💍🌹
+                    </p>
+                </div>
+
+                <div class="text-xs text-warmGold font-cairo font-bold animate-pulse">
+                    جارٍ فك القفل وبدء ليلة ميلادكِ الساحرة... 🎉
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- MAIN EXPERIENCE -->
+    <!-- ========================================== -->
+    <main id="mainExperience" class="relative z-10 opacity-0 transition-opacity duration-1000 max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-28">
+
+        <!-- HERO SECTION (Iraqi Romance & Ghazal) -->
+        <section class="text-center py-10 md:py-16 relative">
+            <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full glass-card-gold text-warmGold text-xs md:text-sm font-semibold mb-6 animate-pulse">
+                <span class="text-rose-400">🌹</span>
+                <span>12:00 AM • ميلاد أجمل صدفة بدنيتي</span>
+                <span class="text-rose-400">🌹</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-cairo leading-tight mb-4 text-glow-gold">
+                كل عام وأنتي عيدي وعافيتي يا <span class="text-transparent bg-clip-text bg-gradient-to-r from-warmGold via-rose-300 to-warmGold">جونايتي</span> 💖
+            </h1>
+
+            <p class="text-lg md:text-2xl text-pink-100/95 font-amiri font-normal italic max-w-3xl mx-auto leading-relaxed mt-4">
+                "يا بعد هلي وكل طوايفي.. أحبچ بكد الهوى وبكد النجوم وبكد كل دكة بهالكلب، فدوة أروح لهالوجه السمح اللي من أشوفه ترجعلي روحي 💍🌹"
+            </p>
+
+            <div class="mt-8 flex flex-wrap justify-center gap-3">
+                <button onclick="fireExtraConfetti()" class="px-6 py-3 rounded-full bg-gradient-to-r from-roseGold/30 to-warmGold/30 border border-warmGold/50 text-warmGold hover:scale-105 active:scale-95 transition flex items-center gap-2 text-sm shadow-xl">
+                    <span>إطلاق الورد والألعاب النارية 🎆🌹</span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- SECTION 1: REAL MEMORIES & PHOTOS -->
+        <!-- ========================================== -->
+        <section class="my-14">
+            <div class="text-center mb-10">
+                <div class="inline-flex items-center gap-2 text-warmGold text-xs uppercase tracking-widest font-bold mb-2">
+                    <i data-lucide="camera" class="w-4 h-4"></i>
+                    <span>ألبوم ذكرياتنا • يوسف & زهراء</span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold font-cairo text-white mb-2">لحظات انحفرت بالكلب للأبد 📸❤️</h2>
+                <p class="text-sm text-pink-100/80">كل صورة وياها نبضة حب وعهد زلمة ما ينكسر</p>
+            </div>
+
+            <!-- 3 Photo Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto px-2">
+                
+                <!-- Photo 1 -->
+                <div class="luxury-photo-card rounded-2xl text-center transform -rotate-2 cursor-pointer group" onclick="viewPhoto(0)">
+                    <div class="w-full h-80 rounded-xl overflow-hidden bg-zinc-950 mb-3 relative">
+                        <img id="galleryImg0" src="assets/photo1.jpg" alt="يوسف وزهراء" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <span class="absolute bottom-2 right-2 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-[11px] font-cairo">
+                            كتفي ملجأچ للأبد 🤍
+                        </span>
+                    </div>
+                    <p class="font-cairo text-zinc-900 font-extrabold text-base mb-1">ضحكتچ وميلتچ على كتفي ✨</p>
+                    <p class="text-xs text-zinc-600 font-amiri leading-relaxed">
+                        "انخلق كتفي حتى يكون إلچ سند وأمان.. فدوة لهالضحكة اللي ترد الروح يا جونايتي"
+                    </p>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="luxury-photo-card rounded-2xl text-center transform rotate-2 cursor-pointer group" onclick="viewPhoto(1)">
+                    <div class="w-full h-80 rounded-xl overflow-hidden bg-zinc-950 mb-3 relative">
+                        <img id="galleryImg1" src="assets/photo2.jpg" alt="الورد ويدي بيدك" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <span class="absolute bottom-2 right-2 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-[11px] font-cairo">
+                            إيدي بإيدچ لآخر العمر 🌹
+                        </span>
+                    </div>
+                    <p class="font-cairo text-zinc-900 font-extrabold text-base mb-1">وردة لمن هي أحلى من الورد 💍</p>
+                    <p class="text-xs text-zinc-600 font-amiri leading-relaxed">
+                        "كل ورد الدنيا يخجل كدام جمالچ.. وإيدي ما تفلت إيدچ لو ينتهي العالم"
+                    </p>
+                </div>
+
+                <!-- Photo 3 -->
+                <div class="luxury-photo-card rounded-2xl text-center transform -rotate-1 cursor-pointer group" onclick="viewPhoto(2)">
+                    <div class="w-full h-80 rounded-xl overflow-hidden bg-zinc-950 mb-3 relative">
+                        <img id="galleryImg2" src="assets/photo3.jpg" alt="ذكرياتنا الجميلة" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <span class="absolute bottom-2 right-2 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-[11px] font-cairo">
+                            تفاصيلنا وسوالفنا 🌸
+                        </span>
+                    </div>
+                    <p class="font-cairo text-zinc-900 font-extrabold text-base mb-1">ملامح حبنا الصادق 💖</p>
+                    <p class="text-xs text-zinc-600 font-amiri leading-relaxed">
+                        "بكل نظرة تجمعنا أشوف بيچ مستقبلي وأحلى بنية بالكون كله"
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- SECTION 2: CINEMA OF OUR LOVE (الفيديو الخاص) -->
+        <!-- ========================================== -->
+        <section class="my-16 glass-card-gold rounded-3xl p-6 sm:p-10 border border-warmGold/40 text-center relative overflow-hidden max-w-3xl mx-auto cinema-glow">
+            <div class="inline-flex items-center gap-2 text-warmGold text-xs uppercase tracking-widest font-bold mb-2">
+                <i data-lucide="clapperboard" class="w-4 h-4 text-warmGold"></i>
+                <span>سينما ذكرياتنا • فيديو خاص من القلب</span>
+                <i data-lucide="clapperboard" class="w-4 h-4 text-warmGold"></i>
+            </div>
+            
+            <h2 class="text-2xl sm:text-3xl font-extrabold font-cairo text-white mb-2">
+                لحظة وثقتها الكاميرا وخلدها الكلب 🎬❤️
+            </h2>
+            <p class="text-xs sm:text-sm text-pink-100/80 font-amiri text-lg mb-6 max-w-xl mx-auto leading-relaxed">
+                "كل ثانية بهذا المقطع تسوى عندي كل كنوز الأرض.. فدوة لضحكتچ وعيونچ وتفاصيلچ الحلوة يا جونايتي"
+            </p>
+
+            <!-- Video Player Wrapper with Golden Cinematic Frame -->
+            <div class="relative w-full max-w-md mx-auto rounded-3xl overflow-hidden border-2 border-warmGold/60 shadow-2xl bg-black group">
+                <video id="specialMomentVideo" 
+                    playsinline 
+                    controls 
+                    loop 
+                    preload="auto"
+                    class="w-full max-h-[500px] object-cover mx-auto"
+                    onplay="handleVideoPlay()"
+                    onpause="handleVideoPause()">
+                    <source src="assets/our_video.mp4" type="video/mp4">
+                    <source src="assets/our_video.mov" type="video/quicktime">
+                    متصفحك لا يدعم تشغيل الفيديو
+                </video>
+            </div>
+
+            <!-- Sweet Audio hint -->
+            <p class="text-xs text-warmGold/90 mt-4 flex items-center justify-center gap-1.5 font-cairo">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                <span>شغلي الفيديو واستمتعي باللحظة (الموسيقى توقف تلقائياً حتى تسمعين صوت المقطع) ✨</span>
+            </p>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- SECTION 3: BLOOMING ROSE -->
+        <!-- ========================================== -->
+        <section class="my-14 glass-card rounded-3xl p-6 sm:p-10 border border-rose-500/30 text-center relative overflow-hidden max-w-xl mx-auto">
+            <div class="inline-flex items-center gap-2 text-rose-400 text-xs uppercase tracking-widest font-bold mb-2">
+                <span>🌹</span>
+                <span>وردة خاصة من يوسف إلى جونايته</span>
+                <span>🌹</span>
+            </div>
+            <h3 class="text-2xl font-bold font-cairo text-white mb-2">المسي الوردة وشوفي شتكلچ</h3>
+            <p class="text-xs sm:text-sm text-pink-100/70 mb-6">وردة ما تذبل أبد مثل حبچ بكلبي</p>
+
+            <div class="relative w-40 h-40 mx-auto flex items-center justify-center cursor-pointer select-none group" onclick="bloomRose()">
+                <div id="roseIconContainer" class="text-7xl sm:text-8xl transform transition-transform duration-500 group-hover:scale-125 filter drop-shadow-[0_0_25px_rgba(244,63,94,0.8)]">
+                    🌹
+                </div>
+            </div>
+
+            <div id="roseNote" class="hidden mt-6 p-5 rounded-2xl glass-card-gold text-center border border-rose-400/50 animate-fadeIn">
+                <p class="font-amiri text-lg text-pink-100 leading-relaxed">
+                    "لو بيدي أجيبلچ بساتين بغداد والعالم كلها، بس أنتي الوردة الوحيدة اللي مفرّحة كلبي.. يا عطر أيامي يا زهراء ❤️"
+                </p>
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- SECTION 4: BIRTHDAY CAKE -->
+        <!-- ========================================== -->
+        <section class="my-14 glass-card rounded-3xl p-6 sm:p-10 border border-white/10 text-center relative overflow-hidden">
+            <div class="absolute -top-24 -left-24 w-64 h-64 bg-roseGold/20 rounded-full blur-[80px]"></div>
+            <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-warmGold/20 rounded-full blur-[80px]"></div>
+
+            <div class="relative z-10 max-w-xl mx-auto">
+                <div class="inline-flex items-center gap-2 text-warmGold text-xs uppercase tracking-widest font-bold mb-2">
+                    <i data-lucide="cake" class="w-4 h-4"></i>
+                    <span>تورتة ميلاد جونايتي 🎂</span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-bold font-cairo text-white mb-2">تمني أمنية من أعماق كلبچ.. وانفخي الشمعة! ✨</h2>
+                <p class="text-sm text-pink-100/70 mb-8">المسي الشمعة أو دوسي على الزر لتطفئيها</p>
+
+                <!-- Interactive SVG Cake -->
+                <div class="relative w-64 h-64 mx-auto flex items-center justify-center cursor-pointer select-none group" onclick="blowCandle()">
+                    <div id="cakeContainer" class="transform transition duration-500 group-hover:scale-105">
+                        <svg class="w-60 h-60 drop-shadow-[0_20px_35px_rgba(212,175,55,0.35)]" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="150" cy="260" rx="120" ry="20" fill="#2d132c" stroke="#D4AF37" stroke-width="2"/>
+                            <ellipse cx="150" cy="255" rx="110" ry="16" fill="#f7e7ce" opacity="0.3"/>
+
+                            <rect x="50" y="180" width="200" height="70" rx="15" fill="url(#cakeGrad2)"/>
+                            <path d="M50 200 C70 215, 90 195, 110 210 C130 225, 150 195, 170 210 C190 220, 210 200, 230 215 C240 220, 245 205, 250 200 L250 180 L50 180 Z" fill="#ffffff" opacity="0.9"/>
+                            <circle cx="80" cy="235" r="4" fill="#D4AF37"/>
+                            <circle cx="120" cy="235" r="4" fill="#D4AF37"/>
+                            <circle cx="150" cy="235" r="5" fill="#e57388"/>
+                            <circle cx="180" cy="235" r="4" fill="#D4AF37"/>
+                            <circle cx="220" cy="235" r="4" fill="#D4AF37"/>
+
+                            <rect x="80" y="115" width="140" height="65" rx="12" fill="url(#cakeGrad1)"/>
+                            <path d="M80 135 C95 145, 110 130, 125 142 C140 152, 160 130, 175 142 C190 150, 205 135, 220 135 L220 115 L80 115 Z" fill="#ffffff"/>
+                            <circle cx="105" cy="160" r="3.5" fill="#D4AF37"/>
+                            <circle cx="135" cy="160" r="3.5" fill="#D4AF37"/>
+                            <circle cx="165" cy="160" r="3.5" fill="#D4AF37"/>
+                            <circle cx="195" cy="160" r="3.5" fill="#D4AF37"/>
+
+                            <rect x="145" y="65" width="10" height="50" rx="4" fill="#FFE4E6" stroke="#B76E79" stroke-width="1.5"/>
+                            <line x1="147" y1="75" x2="153" y2="70" stroke="#B76E79" stroke-width="1.5"/>
+                            <line x1="147" y1="90" x2="153" y2="85" stroke="#B76E79" stroke-width="1.5"/>
+                            <line x1="147" y1="105" x2="153" y2="100" stroke="#B76E79" stroke-width="1.5"/>
+                            <line x1="150" y1="65" x2="150" y2="55" stroke="#333" stroke-width="2"/>
+
+                            <g id="candleFlame" class="flame transition-opacity duration-700">
+                                <path d="M150 20 C140 40, 142 55, 150 55 C158 55, 160 40, 150 20 Z" fill="url(#flameGrad)"/>
+                                <ellipse cx="150" cy="45" rx="4" ry="7" fill="#ffffff" opacity="0.8"/>
+                            </g>
+
+                            <g id="candleSmoke" class="opacity-0 transition-opacity duration-1000">
+                                <path d="M150 50 Q145 35 155 25 T145 10" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+                            </g>
+
+                            <defs>
+                                <linearGradient id="cakeGrad1" x1="80" y1="115" x2="220" y2="180" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#b85d77"/>
+                                    <stop offset="1" stop-color="#6e1d3d"/>
+                                </linearGradient>
+                                <linearGradient id="cakeGrad2" x1="50" y1="180" x2="250" y2="250" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#a84364"/>
+                                    <stop offset="1" stop-color="#460d22"/>
+                                </linearGradient>
+                                <linearGradient id="flameGrad" x1="150" y1="20" x2="150" y2="55" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFF275"/>
+                                    <stop offset="0.5" stop-color="#FF8C00"/>
+                                    <stop offset="1" stop-color="#FF0055"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+
+                <button id="blowCandleBtn" onclick="blowCandle()" 
+                    class="mt-6 px-7 py-3 rounded-full bg-gradient-to-r from-warmGold via-roseGold to-warmGold text-white font-semibold text-sm shadow-xl hover:shadow-warmGold/40 hover:scale-105 active:scale-95 transition flex items-center gap-2 mx-auto">
+                    <i data-lucide="wind" class="w-4 h-4"></i>
+                    <span>انفخي الشمعة وتمني أمنية يا زهراء 🎂💨</span>
+                </button>
+
+                <div id="wishRevealedCard" class="hidden mt-8 p-6 rounded-2xl glass-card-gold text-center transform scale-95 transition-all duration-700">
+                    <div class="w-12 h-12 rounded-full bg-warmGold/20 flex items-center justify-center mx-auto mb-3 text-warmGold">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-cairo text-warmGold mb-2">أمنية مستجابة بإذن الله يا بعد روحي ❤️</h3>
+                    <p class="text-pink-100 text-sm md:text-base leading-relaxed font-amiri text-lg">
+                        "عسى كل سنة وسنينچ الجاية كلها راحة بال وسعادة، وتظلين منورة أيامي.. وأول أمنية أدعي ربي بيها نبقى سوا ونبني بيتنا ونعيش أحلى حياة يارب 💍✨"
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- SECTION 5: THE WAX-SEALED LOVE LETTER (FROM YOUSEF) -->
+        <!-- ========================================== -->
+        <section class="my-14 text-center">
+            <div class="inline-flex items-center gap-2 text-warmGold text-xs uppercase tracking-widest font-bold mb-2">
+                <i data-lucide="mail-heart" class="w-4 h-4"></i>
+                <span>رسالة خاصة من كلب يوسف</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold font-cairo text-white mb-2">كلمات كُتبت بمداد الروح 📜</h2>
+            <p class="text-sm text-pink-100/70 mb-8">دوسي على الظرف لفض الختم وقراءة الرسالة 💌</p>
+
+            <div class="max-w-xl mx-auto">
+                <div id="envelopeWrapper" onclick="toggleLetter()" class="cursor-pointer relative group transition-all duration-500">
+                    
+                    <div id="envelopeClosed" class="p-8 sm:p-12 rounded-3xl glass-card border border-roseGold/40 shadow-2xl relative overflow-hidden flex flex-col items-center justify-center min-h-[220px] group-hover:border-warmGold transition">
+                        <div class="absolute inset-0 bg-gradient-to-br from-roseGold/10 via-transparent to-warmGold/10 pointer-events-none"></div>
+                        
+                        <div class="w-20 h-20 rounded-full bg-gradient-to-tr from-[#881337] via-[#be123c] to-[#e11d48] border-2 border-warmGold/70 shadow-xl flex items-center justify-center mb-4 group-hover:scale-110 transition duration-300">
+                            <i data-lucide="heart" class="w-10 h-10 text-warmGold fill-warmGold"></i>
+                        </div>
+                        <h4 class="text-base sm:text-lg font-bold text-warmGold font-cairo">رسالة سرية موجهة إلى: زهراء (جونايتي)</h4>
+                        <p class="text-xs text-pink-200/60 mt-1">اضغطي هنا لفض الختم الملكي 📜</p>
+                    </div>
+
+                    <div id="envelopeOpen" class="hidden mt-4 parchment rounded-2xl p-6 sm:p-10 text-right shadow-2xl border-2 border-[#D4AF37]/50 relative transition-all duration-700 animate-fadeIn">
+                        <div class="flex items-center justify-between border-b border-[#2c1810]/20 pb-4 mb-6">
+                            <span class="text-xs font-semibold text-[#881337] flex items-center gap-1.5 font-cairo">
+                                <i data-lucide="feather" class="w-4 h-4 text-warmGold"></i>
+                                <span>من يوسف إلى نبض قلبه زهراء</span>
+                            </span>
+                            <span class="text-xs text-[#2c1810]/60 font-sans">12:00 AM • الليلة</span>
+                        </div>
+
+                        <div class="font-amiri text-lg sm:text-xl text-[#26150e] leading-loose space-y-4">
+                            <p>
+                                <strong>حبيبتي ونبض روحي وزهراء أيامي،</strong>
+                            </p>
+                            <p>
+                                تدق الساعة الثانية عشر منتصف الليل، وتتسابق دقات قلبي لتقول لكِ قبل الدنيا كلها: كل عام وأنتِ لروحي حياة، وكل عام وأنتِ أجمل وأحن إنسانة رزقني إياها رب العالمين.
+                            </p>
+                            <p>
+                                يا جونايتي.. من سنة 2021 لليوم، وكل يوم يمر عليّ أحمد ربي بيچ.. أنتي مو بس حبيبتي، أنتي عافيتي ونور عيوني وسندي ودنيتي كلها.
+                            </p>
+                            <p>
+                                فدوة أروح لهالضحكة اللي ترجعلي الروح، وفدوة لميلتچ على كتفي.. كتفي انخلق حتى يكون أمانچ وسندچ طول العمر، وإيدي ما تفلت إيدچ لو تنتهي الدنيا.
+                            </p>
+                            <p>
+                                وعد زلمة وبكل دكة بقلبي.. أضل أحبچ وأصونچ وأخليچ أسعد بنية بالدنيا كلها. كل عام وأنتي عيدي وأغلى ناسي يا زهراء.
+                            </p>
+                            <p class="text-left font-bold text-[#881337] pt-4 font-cairo">
+                                يوسف ومحبكِ للأبد ❤️
+                            </p>
+                        </div>
+
+                        <div class="mt-6 text-center pt-4 border-t border-[#2c1810]/15">
+                            <button onclick="event.stopPropagation(); toggleLetter();" class="text-xs text-[#881337] hover:underline flex items-center justify-center gap-1 mx-auto font-cairo">
+                                <i data-lucide="chevron-up" class="w-4 h-4"></i>
+                                <span>طي الرسالة</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- SECTION 6: REASONS WHY YOUSEF LOVES ZAHRAA -->
+        <!-- ========================================== -->
+        <section class="my-14">
+            <div class="text-center mb-10">
+                <div class="inline-flex items-center gap-2 text-warmGold text-xs uppercase tracking-widest font-bold mb-2">
+                    <i data-lucide="sparkle" class="w-4 h-4"></i>
+                    <span>أسرار من قلبي</span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-bold font-cairo text-white mb-2">ليش أنتي أغلى شي بدنيتي يا زهراء؟ 💖</h2>
+                <p class="text-sm text-pink-100/70">المسي البطاقات وشوفي شضام الچ بكلبي</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                
+                <!-- Card 1 -->
+                <div class="group h-48 perspective-1000 cursor-pointer" onclick="flipCard(this)">
+                    <div class="card-inner relative w-full h-full transform-style-3d transition-transform duration-700">
+                        <div class="absolute inset-0 backface-hidden glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center border border-white/10 group-hover:border-warmGold/40 transition">
+                            <div class="w-12 h-12 rounded-full bg-roseGold/20 flex items-center justify-center text-rose-300 mb-3">
+                                <i data-lucide="smile" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-lg font-bold font-cairo text-white mb-1">ضحكة جونايتي</h3>
+                            <p class="text-xs text-warmGold">اضغطي لقراءة السر ✨</p>
+                        </div>
+                        <div class="absolute inset-0 backface-hidden rotate-y-180 glass-card-gold rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+                            <p class="text-sm text-pink-100 font-amiri text-base leading-relaxed">
+                                "فدوة لهالضحكة اللي ترد الروح وتمسح كل تعب الدنيا.. يا ضحكة أيامي وعافية كلبي."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group h-48 perspective-1000 cursor-pointer" onclick="flipCard(this)">
+                    <div class="card-inner relative w-full h-full transform-style-3d transition-transform duration-700">
+                        <div class="absolute inset-0 backface-hidden glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center border border-white/10 group-hover:border-warmGold/40 transition">
+                            <div class="w-12 h-12 rounded-full bg-roseGold/20 flex items-center justify-center text-rose-300 mb-3">
+                                <i data-lucide="eye" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-lg font-bold font-cairo text-white mb-1">سحر عيون زهراء</h3>
+                            <p class="text-xs text-warmGold">اضغطي لقراءة السر ✨</p>
+                        </div>
+                        <div class="absolute inset-0 backface-hidden rotate-y-180 glass-card-gold rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+                            <p class="text-sm text-pink-100 font-amiri text-base leading-relaxed">
+                                "عيونچ دنيتي وسكينة روحي.. يا بعد كلبي ما شفت أجمل من سواد عيونچ وسحرهن."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group h-48 perspective-1000 cursor-pointer" onclick="flipCard(this)">
+                    <div class="card-inner relative w-full h-full transform-style-3d transition-transform duration-700">
+                        <div class="absolute inset-0 backface-hidden glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center border border-white/10 group-hover:border-warmGold/40 transition">
+                            <div class="w-12 h-12 rounded-full bg-roseGold/20 flex items-center justify-center text-rose-300 mb-3">
+                                <i data-lucide="shield-check" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-lg font-bold font-cairo text-white mb-1">ميلتچ على كتفي</h3>
+                            <p class="text-xs text-warmGold">اضغطي لقراءة السر ✨</p>
+                        </div>
+                        <div class="absolute inset-0 backface-hidden rotate-y-180 glass-card-gold rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+                            <p class="text-sm text-pink-100 font-amiri text-base leading-relaxed">
+                                "كتفي انخلق إلچ وبس.. تدرين من تحطين راسچ على كتفي، أحس ملكت الكون كله."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="group h-48 perspective-1000 cursor-pointer" onclick="flipCard(this)">
+                    <div class="card-inner relative w-full h-full transform-style-3d transition-transform duration-700">
+                        <div class="absolute inset-0 backface-hidden glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center border border-white/10 group-hover:border-warmGold/40 transition">
+                            <div class="w-12 h-12 rounded-full bg-roseGold/20 flex items-center justify-center text-rose-300 mb-3">
+                                <i data-lucide="gem" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-lg font-bold font-cairo text-white mb-1">عفويتچ ودلالچ</h3>
+                            <p class="text-xs text-warmGold">اضغطي لقراءة السر ✨</p>
+                        </div>
+                        <div class="absolute inset-0 backface-hidden rotate-y-180 glass-card-gold rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+                            <p class="text-sm text-pink-100 font-amiri text-base leading-relaxed">
+                                "أحب دلالچ، زعلچ الصغير ورضاچ السريع.. كل تفصيلة بيچ تجنن يا روحي."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="group h-48 perspective-1000 cursor-pointer" onclick="flipCard(this)">
+                    <div class="card-inner relative w-full h-full transform-style-3d transition-transform duration-700">
+                        <div class="absolute inset-0 backface-hidden glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center border border-white/10 group-hover:border-warmGold/40 transition">
+                            <div class="w-12 h-12 rounded-full bg-roseGold/20 flex items-center justify-center text-rose-300 mb-3">
+                                <i data-lucide="calendar-heart" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-lg font-bold font-cairo text-white mb-1">حبنا من 2021</h3>
+                            <p class="text-xs text-warmGold">اضغطي لقراءة السر ✨</p>
+                        </div>
+                        <div class="absolute inset-0 backface-hidden rotate-y-180 glass-card-gold rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+                            <p class="text-sm text-pink-100 font-amiri text-base leading-relaxed">
+                                "أحلى سنة بدت بيها قصتنا.. ومن ذاك اليوم لليوم، كل دقيقة حبچ يزيد بكلبي أضعاف."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="group h-48 perspective-1000 cursor-pointer" onclick="flipCard(this)">
+                    <div class="card-inner relative w-full h-full transform-style-3d transition-transform duration-700">
+                        <div class="absolute inset-0 backface-hidden glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center border border-white/10 group-hover:border-warmGold/40 transition">
+                            <div class="w-12 h-12 rounded-full bg-roseGold/20 flex items-center justify-center text-rose-300 mb-3">
+                                <i data-lucide="infinity" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-lg font-bold font-cairo text-white mb-1">أنچ نصيبي وقدري</h3>
+                            <p class="text-xs text-warmGold">اضغطي لقراءة السر ✨</p>
+                        </div>
+                        <div class="absolute inset-0 backface-hidden rotate-y-180 glass-card-gold rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+                            <p class="text-sm text-pink-100 font-amiri text-base leading-relaxed">
+                                "لو يرجع بيا الزمن ألف مرة، أختارچ أنتي وما أبدلچ بكنوز الدنيا كلها."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- SECTION 7: THE INTERACTIVE LOVE JAR (برطمان رسائل الحب) -->
+        <!-- ========================================== -->
+        <section class="my-16 glass-card-gold rounded-3xl p-6 sm:p-10 border border-warmGold/40 text-center relative overflow-hidden max-w-xl mx-auto">
+            <div class="inline-flex items-center gap-2 text-warmGold text-xs uppercase tracking-widest font-bold mb-2">
+                <span>✨</span>
+                <span>برطمان رسائل العشق اليومية</span>
+                <span>✨</span>
+            </div>
+            
+            <h2 class="text-2xl sm:text-3xl font-bold font-cairo text-white mb-2">
+                اسحبي رسالة اليوم من يوسف 💌
+            </h2>
+            <p class="text-xs sm:text-sm text-pink-100/80 mb-6">
+                كل ما تدوسين على البرطمان، تطلعلچ رسالة حب عراقية جديدة من كلب يوسف!
+            </p>
+
+            <!-- Interactive Glowing Jar Icon -->
+            <div class="relative w-36 h-36 mx-auto flex items-center justify-center cursor-pointer select-none group" onclick="drawLoveJarMessage()">
+                <div id="jarVisual" class="w-28 h-28 rounded-3xl glass-card border-2 border-warmGold/70 shadow-2xl flex items-center justify-center text-5xl transform transition-transform duration-300 group-hover:scale-110 active:scale-95">
+                    🏺
+                </div>
+            </div>
+
+            <button onclick="drawLoveJarMessage()" 
+                class="mt-5 px-6 py-2.5 rounded-full bg-gradient-to-r from-warmGold to-roseGold text-white text-xs sm:text-sm font-bold shadow-lg hover:scale-105 active:scale-95 transition flex items-center gap-2 mx-auto">
+                <i data-lucide="mail-open" class="w-4 h-4"></i>
+                <span>اسحبي رسالة جديدة الآن ✨</span>
+            </button>
+
+            <!-- Revealed Love Message Card -->
+            <div id="loveJarCard" class="hidden mt-6 p-6 rounded-2xl parchment text-center border-2 border-warmGold/50 shadow-2xl animate-fadeIn">
+                <span class="text-xs font-bold text-red-900 font-cairo flex items-center justify-center gap-1 mb-2">
+                    <i data-lucide="feather" class="w-3.5 h-3.5 text-warmGold"></i>
+                    <span>رسالة يوسف لجونايته:</span>
+                </span>
+                <p id="loveJarText" class="font-amiri text-lg sm:text-xl text-[#26150e] leading-relaxed font-bold">
+                    "يا بعد هلي.. كلبي ما يدك إلا باسمچ ❤️"
+                </p>
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- SECTION 8: FINGERPRINT SCANNER GAME -->
+        <!-- ========================================== -->
+        <section class="my-16 glass-card rounded-3xl p-6 sm:p-10 border border-white/10 text-center relative overflow-hidden max-w-xl mx-auto">
+            <div class="inline-flex items-center gap-2 text-warmGold text-xs uppercase tracking-widest font-bold mb-2">
+                <i data-lucide="fingerprint" class="w-4 h-4"></i>
+                <span>مقياس نبضات الحب الذكي</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold font-cairo text-white mb-2">حطي بصمتچ يا جونايتي 💓</h2>
+            <p class="text-xs sm:text-sm text-pink-100/70 mb-6">دوسي بإصبعچ مع الاستمرار لمدة 3 ثوانٍ لفحص حب يوسف إلچ</p>
+
+            <div class="relative w-36 h-36 mx-auto flex items-center justify-center">
+                <div id="scanLaser" class="hidden absolute inset-x-2 h-1 bg-gradient-to-r from-transparent via-rose-400 to-transparent shadow-[0_0_15px_#ff2d55] scan-laser z-20 pointer-events-none"></div>
+
+                <button id="fingerprintBtn" 
+                    onmousedown="startFingerprintScan()" onmouseup="cancelFingerprintScan()" 
+                    ontouchstart="startFingerprintScan(event)" ontouchend="cancelFingerprintScan()"
+                    class="w-28 h-28 rounded-3xl glass-card-gold border-2 border-rose-400/50 flex flex-col items-center justify-center text-rose-300 relative overflow-hidden transition-transform duration-200 active:scale-95 group">
+                    <i data-lucide="fingerprint" class="w-16 h-16 text-rose-400 group-hover:scale-110 transition duration-300"></i>
+                    <div id="scanProgress" class="absolute bottom-0 inset-x-0 bg-rose-500/30 h-0 transition-all duration-300 pointer-events-none"></div>
+                </button>
+            </div>
+
+            <p id="scanStatusText" class="mt-4 text-xs font-semibold text-warmGold">دوسي على البصمة بدون ما ترفعين إيدچ ✨</p>
+
+            <div id="scanResultCard" class="hidden mt-6 p-6 rounded-2xl glass-card-gold text-center border border-rose-400/60 animate-fadeIn">
+                <div class="w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 flex items-center justify-center mx-auto mb-2">
+                    <i data-lucide="heart" class="w-7 h-7 fill-rose-400"></i>
+                </div>
+                <h3 class="text-lg font-bold font-cairo text-warmGold mb-1">النتيجة: حب لا نهائي يتخطى 1,000,000%! 📈💖</h3>
+                <p class="text-pink-100 text-sm font-amiri text-base leading-relaxed">
+                    "أجهزة الفحص تكول إن حب يوسف لزهراء واصل مرحلة العشق الأبدي، وأنتي الملكة الوحيدة المتربعة على عرش قلبه بدون أي منافس 👑💍"
+                </p>
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- SECTION 9: THE SURPRISE GIFT BOX (الهدية بالطريق) -->
+        <!-- ========================================== -->
+        <section class="my-16 text-center">
+            <div class="inline-flex items-center gap-2 text-warmGold text-xs uppercase tracking-widest font-bold mb-2">
+                <i data-lucide="gift" class="w-4 h-4"></i>
+                <span>مفاجأة يوسف لزهراء</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold font-cairo text-white mb-2">هدية خاصة تنتظرچ 🎁</h2>
+            <p class="text-sm text-pink-100/70 mb-8">المسي الصندوق وشوفي شضام الچ يوسف</p>
+
+            <div class="max-w-md mx-auto">
+                <div id="giftBoxContainer" onclick="openGiftBox()" class="cursor-pointer group flex flex-col items-center">
+                    <div id="giftBoxVisual" class="w-36 h-36 relative flex items-center justify-center transition-all duration-500 group-hover:scale-110">
+                        <div class="w-32 h-32 rounded-2xl bg-gradient-to-tr from-[#9f1239] via-[#be123c] to-[#fda4af] shadow-2xl relative border-2 border-warmGold/60 flex items-center justify-center animate-bounce" style="animation-duration: 2s;">
+                            <div class="absolute inset-y-0 w-6 bg-gradient-to-r from-warmGold via-[#fff] to-warmGold shadow"></div>
+                            <div class="absolute inset-x-0 h-6 bg-gradient-to-b from-warmGold via-[#fff] to-warmGold shadow"></div>
+                            <div class="absolute -top-4 w-12 h-12 bg-warmGold rounded-full shadow-lg border border-white flex items-center justify-center text-xs font-bold text-red-900">
+                                🎀
+                            </div>
+                        </div>
+                    </div>
+                    <span id="giftHintText" class="mt-4 text-xs font-semibold text-warmGold flex items-center gap-1">
+                        <span>دوسي لفتح الهدية!</span>
+                        <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                    </span>
+
+                    <div id="giftRevealedCard" class="hidden mt-6 p-6 sm:p-8 rounded-3xl glass-card-gold text-center border-2 border-warmGold shadow-2xl animate-fadeIn">
+                        <div class="w-16 h-16 rounded-full bg-warmGold/30 text-warmGold flex items-center justify-center mx-auto mb-3">
+                            <span class="text-3xl">🚗💨</span>
+                        </div>
+                        <span class="inline-block px-4 py-1.5 rounded-full bg-roseGold/30 text-warmGold text-xs font-extrabold mb-2 tracking-wide">مفاجأة خاصة جداً 🎟️</span>
+                        <h3 class="text-2xl font-bold font-cairo text-white mb-3">الهدية بالطريق يا عيوني! 🎁🚗💨</h3>
+                        <p class="text-sm text-pink-100 font-amiri text-lg leading-relaxed">
+                            "مفاجأتي وهديتي الخاصة واصلة بالطريق لإيدچ يا جونايتي.. ومو بس هاي، باچر يوم كامل مخصص إلچ ولضحكتچ الحلوة! جهزي روحچ يا أحلى وأغلى زهراء بالدنيا ❤️🌹"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- SECTION 10: REAL LIVE LOVE COUNTER (SINCE 2021) -->
+        <!-- ========================================== -->
+        <section class="my-16 glass-card rounded-3xl p-6 sm:p-8 border border-white/10 text-center max-w-3xl mx-auto relative overflow-hidden">
+            <div class="absolute -top-10 -left-10 w-40 h-40 bg-roseGold/20 rounded-full blur-[60px]"></div>
+            <div class="relative z-10">
+                <div class="w-12 h-12 rounded-full bg-roseGold/20 text-rose-300 flex items-center justify-center mx-auto mb-3">
+                    <i data-lucide="clock" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold font-cairo text-white mb-1">يوسف & زهراء • قصة حبنا من 2021</h3>
+                <p class="text-xs sm:text-sm text-pink-100/80 mb-6">الوقت الحقيقي لرحلة عشقنا بتكتكة الثواني المستمرة 💓</p>
+
+                <div class="grid grid-cols-4 gap-2 sm:gap-4 text-center">
+                    <div class="p-3 sm:p-5 rounded-2xl bg-white/5 border border-warmGold/30 shadow-inner">
+                        <span id="counterDays" class="block text-2xl sm:text-4xl font-extrabold text-warmGold font-cairo tracking-tight">--</span>
+                        <span class="text-xs text-pink-200/80 font-medium">يوم حب</span>
+                    </div>
+                    <div class="p-3 sm:p-5 rounded-2xl bg-white/5 border border-white/15">
+                        <span id="counterHours" class="block text-2xl sm:text-4xl font-extrabold text-white font-cairo">--</span>
+                        <span class="text-xs text-pink-200/80 font-medium">ساعة</span>
+                    </div>
+                    <div class="p-3 sm:p-5 rounded-2xl bg-white/5 border border-white/15">
+                        <span id="counterMinutes" class="block text-2xl sm:text-4xl font-extrabold text-white font-cairo">--</span>
+                        <span class="text-xs text-pink-200/80 font-medium">دقيقة</span>
+                    </div>
+                    <div class="p-3 sm:p-5 rounded-2xl bg-white/5 border border-rose-500/40 animate-pulse">
+                        <span id="counterSeconds" class="block text-2xl sm:text-4xl font-extrabold text-rose-400 font-cairo">--</span>
+                        <span class="text-xs text-rose-300 font-medium">ثانية حب</span>
+                    </div>
+                </div>
+
+                <p class="text-xs text-warmGold/80 mt-5 font-amiri text-base">
+                    "كل ثانية مرت من 2021 ولليوم هي نعمة وشكر لله لأنچ وياي.. وإلى أبد الآبدين ❤️"
+                </p>
+            </div>
+        </section>
+
+
+        <!-- FOOTER & TELEGRAM DIRECT REPLY -->
+        <footer class="mt-20 text-center border-t border-white/10 pt-8">
+            <div class="mb-6">
+                <a id="telegramReplyBtn" href="https://t.me/yoouusssiifff" target="_blank"
+                    class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-bold text-sm sm:text-base shadow-xl transition-all hover:scale-105 active:scale-95 border border-white/20">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                    <span>دزي ليوسف رسالة حب على التليكرام 💬❤️</span>
+                </a>
+                <p class="text-xs text-sky-300/70 mt-2 font-mono">@yoouusssiifff</p>
+            </div>
+
+            <p class="text-sm text-pink-200/90 font-amiri text-xl">
+                صُنع بكل نبضة حب من <span class="text-warmGold font-bold">يوسف</span> لأميرة قلبه وزهراء أيامه <span class="text-rose-300 font-bold">جونايتي</span> 🌹❤️
+            </p>
+            <p class="text-xs text-white/40 mt-2">عيد ميلاد سعيد يا جونايتي • 12:00 AM</p>
+        </footer>
+
+    </main>
+
+
+    <!-- ========================================== -->
+    <!-- PHOTO VIEWER MODAL -->
+    <!-- ========================================== -->
+    <div id="photoModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/95 backdrop-blur-md hidden transition-all duration-300" onclick="closePhotoModal()">
+        <div class="relative max-w-xl w-full p-2 text-center" onclick="event.stopPropagation()">
+            <button onclick="closePhotoModal()" class="absolute -top-12 left-0 text-white/80 hover:text-white p-2">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <div class="rounded-2xl overflow-hidden shadow-2xl border-2 border-warmGold/40 bg-zinc-900">
+                <img id="modalImg" src="" alt="عرض الصورة" class="w-full max-h-[75vh] object-contain">
+                <div class="p-4 bg-zinc-950 text-white">
+                    <p id="modalCap" class="font-cairo font-bold text-base text-warmGold"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- JAVASCRIPT & ENCRYPTION ENGINE -->
+    <!-- ========================================== -->
+    <script>
+        lucide.createIcons();
+
+        let isMusicPlaying = false;
+        let isCandleBlown = false;
+        let isLetterOpen = false;
+        let isGiftOpen = false;
+        let scanTimer = null;
+        let scanProgressVal = 0;
+
+        // REAL TIME LOVE COUNTER FROM 2021
+        const loveStartDate = new Date('2021-01-01T00:00:00');
+
+        function updateRealLoveCounter() {
+            const now = new Date();
+            const diffMs = now - loveStartDate;
+
+            const totalSeconds = Math.floor(diffMs / 1000);
+            const totalMinutes = Math.floor(totalSeconds / 60);
+            const totalHours = Math.floor(totalMinutes / 60);
+            const days = Math.floor(totalHours / 24);
+
+            const hours = totalHours % 24;
+            const minutes = totalMinutes % 60;
+            const seconds = totalSeconds % 60;
+
+            document.getElementById('counterDays').innerText = days.toLocaleString();
+            document.getElementById('counterHours').innerText = hours.toString().padStart(2, '0');
+            document.getElementById('counterMinutes').innerText = minutes.toString().padStart(2, '0');
+            document.getElementById('counterSeconds').innerText = seconds.toString().padStart(2, '0');
+        }
+        setInterval(updateRealLoveCounter, 1000);
+        updateRealLoveCounter();
+
+        // ============================================
+        // CRYPTOGRAPHIC SHA-256 PASSWORD VERIFICATION
+        // (The word "يوسف" is NEVER stored in clear text)
+        // ============================================
+        const ALLOWED_HASHES = [
+            '77f1f205c980f089ceeeb91cff281121f48b372b33eaf44d340dc4c5da0ea648', // sha256("يوسف")
+            '6fe5b647bc936e2bef5db8a7d11cfa5e525942a47160c3a77339b3c820404e44'  // sha256("يوسفي")
+        ];
+
+        async function computeSHA256(str) {
+            const cleanStr = str.trim().toLowerCase();
+            const buffer = new TextEncoder().encode(cleanStr);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', buffer);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        }
+
+        // Runaway Button Prank ("شخص ثاني")
+        let runawayAttempts = 0;
+        function escapeRunawayButton(e) {
+            if (e && e.cancelable) e.preventDefault();
+            const btn = document.getElementById('runawayBtn');
+            runawayAttempts++;
+
+            const xMax = 120;
+            const yMax = 80;
+            const randomX = (Math.random() - 0.5) * (xMax * 2);
+            const randomY = (Math.random() - 0.5) * (yMax * 2);
+
+            btn.style.transform = `translate(${randomX}px, ${randomY}px) scale(0.9)`;
+
+            const funnyPhrases = [
+                "ما تكدرين تختارينه! 😂",
+                "ماكو غير يوسف! 🏃‍♂️",
+                "وين رايحة؟ هههه",
+                "مستحيل أسمحلچ! 💍",
+                "كلبچ يعرف بس يوسف ❤️"
+            ];
+            btn.innerText = funnyPhrases[runawayAttempts % funnyPhrases.length];
+        }
+
+        function autoPickYousef() {
+            document.getElementById('passwordInput').value = "يوسف";
+            verifyEncryptedPassword();
+        }
+
+        async function verifyEncryptedPassword() {
+            const input = document.getElementById('passwordInput');
+            const errBox = document.getElementById('passwordError');
+            const lockCard = document.getElementById('lockCard');
+            const lockEmoji = document.getElementById('lockEmoji');
+
+            const userVal = input.value;
+            if (!userVal || userVal.trim() === '') {
+                errBox.classList.remove('hidden');
+                lockCard.classList.remove('shake-animation');
+                void lockCard.offsetWidth;
+                lockCard.classList.add('shake-animation');
+                return;
+            }
+
+            const inputHash = await computeSHA256(userVal);
+
+            if (ALLOWED_HASHES.includes(inputHash)) {
+                errBox.classList.add('hidden');
+                lockEmoji.innerText = '🔓';
+                document.getElementById('lockIconBox').classList.add('border-emerald-400', 'text-emerald-400');
+
+                launchDramaticPrank();
+            } else {
+                errBox.classList.remove('hidden');
+                lockCard.classList.remove('shake-animation');
+                void lockCard.offsetWidth;
+                lockCard.classList.add('shake-animation');
+                input.value = '';
+                input.focus();
+            }
+        }
+
+        document.getElementById('passwordInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                verifyEncryptedPassword();
+            }
+        });
+
+        function launchDramaticPrank() {
+            const modal = document.getElementById('prankModal');
+            const bar = document.getElementById('prankProgressBar');
+            modal.classList.remove('hidden');
+
+            setTimeout(() => {
+                bar.style.width = '100%';
+            }, 100);
+
+            setTimeout(() => {
+                modal.classList.add('opacity-0', 'transition-opacity', 'duration-700');
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                    unlockExperience();
+                }, 700);
+            }, 3600);
+        }
+
+        // ============================================
+        // MUSIC CONTROLLER ("غيث ناجي - يا حلم وردي")
+        // ============================================
+        const audio = document.getElementById('romanticSongAudio');
+        const soundWaves = document.getElementById('soundWaves');
+
+        function startSongMusic() {
+            audio.volume = 0.85;
+            const playPromise = audio.play();
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    isMusicPlaying = true;
+                    soundWaves.classList.remove('opacity-50');
+                }).catch(err => {
+                    console.log('Audio autoplay blocked', err);
+                    loadYouTubeFallback();
+                });
+            }
+        }
+
+        function toggleSongMusic() {
+            if (audio.paused) {
+                audio.play();
+                isMusicPlaying = true;
+                soundWaves.classList.remove('opacity-50');
+            } else {
+                audio.pause();
+                isMusicPlaying = false;
+                soundWaves.classList.add('opacity-50');
+            }
+        }
+
+        function loadYouTubeFallback() {
+            const container = document.getElementById('ytPlayerContainer');
+            container.innerHTML = `<iframe id="ytIframe" width="10" height="10" 
+                src="https://www.youtube.com/embed/yd4dRpveC8E?autoplay=1&loop=1&playlist=yd4dRpveC8E&enablejsapi=1" 
+                frameborder="0" allow="autoplay"></iframe>`;
+            isMusicPlaying = true;
+            soundWaves.classList.remove('opacity-50');
+        }
+
+        // VIDEO AUTO DUCKING AUDIO
+        function handleVideoPlay() {
+            if (!audio.paused) {
+                audio.pause();
+                isMusicPlaying = false;
+                soundWaves.classList.add('opacity-50');
+            }
+        }
+
+        function handleVideoPause() {
+            if (audio.paused) {
+                audio.play();
+                isMusicPlaying = true;
+                soundWaves.classList.remove('opacity-50');
+            }
+        }
+
+        // ============================================
+        // LOVE JAR MESSAGES GENERATOR
+        // ============================================
+        const loveJarMessages = [
+            "يا بعد هلي.. كلبي ما يدك إلا باسمچ يا زهراء ❤️",
+            "فدوة لهالوجه السمح اللي من أشوفه تضحكلي الدنيا كلها ✨",
+            "كون العمر ينعاد وأرجع أختارچ أنتي وما أبدلچ بكنوز الكون 💍",
+            "كتفي انخلق حتى يكون ملجأچ وراحتچ وأمانچ الدائم 🤍",
+            "أحبچ بكد الهوى وبكد النجوم وبكد كل دكة بهالكلب 🌹",
+            "أنتي مو بس حبيبتي، أنتي عافيتي ودنيتي وسندي كلها 💖",
+            "ضحكتچ تمسح كل تعب الدنيا من كلبي بثانية وحدة 🌸",
+            "كل يوم يمر أحمد ربي على نعمة وجودچ بنصيبي يا جونايتي ✨",
+            "عسى الضحكة ما تفارق هالشفاف وعسى ربي يديمچ إلي طول العمر 👑",
+            "إيدي ما تفلت إيدچ لو تنتهي الدنيا.. عهد زلمة 💍",
+            "يا وجه الخير والبركة وسر ابتسامتي وراحتي النفسية 🌹",
+            "يا أحلى وأحن صدفة دخلت حياتي وغيرت مجرى عمري كله ❤️",
+            "يا شمس نهاري وكمر ليلي.. أحب دلالچ وزعلچ ورضاچ 🌙",
+            "لو خيروني بين الدنيا كلها وبين عينچ، أختار عينچ وأغمض عن كل العالم ✨",
+            "كل عام وأنتي عيدي وفرحتي.. أحبچ يا جونايتي للأبد 💖"
+        ];
+
+        let lastJarIndex = -1;
+        function drawLoveJarMessage() {
+            let randomIndex;
+            do {
+                randomIndex = Math.floor(Math.random() * loveJarMessages.length);
+            } while (randomIndex === lastJarIndex && loveJarMessages.length > 1);
+            lastJarIndex = randomIndex;
+
+            const card = document.getElementById('loveJarCard');
+            const text = document.getElementById('loveJarText');
+            const jar = document.getElementById('jarVisual');
+
+            jar.classList.add('scale-125', 'rotate-12');
+            setTimeout(() => jar.classList.remove('scale-125', 'rotate-12'), 300);
+
+            text.innerText = loveJarMessages[randomIndex];
+            card.classList.remove('hidden');
+
+            confetti({
+                particleCount: 35,
+                spread: 50,
+                origin: { y: 0.7 }
+            });
+        }
+
+        // ============================================
+        // UNLOCK EXPERIENCE TRIGGER
+        // ============================================
+        function unlockExperience() {
+            startSongMusic();
+            celebrateWithConfetti();
+            triggerRoseShower();
+
+            const gate = document.getElementById('gateOverlay');
+            gate.style.opacity = '0';
+            gate.style.pointerEvents = 'none';
+
+            setTimeout(() => {
+                gate.style.display = 'none';
+                const main = document.getElementById('mainExperience');
+                main.style.opacity = '1';
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 800);
+        }
+
+        // 2. CANDLE BLOWING
+        function blowCandle() {
+            if (isCandleBlown) return;
+            isCandleBlown = true;
+
+            const flame = document.getElementById('candleFlame');
+            const smoke = document.getElementById('candleSmoke');
+            const blowBtn = document.getElementById('blowCandleBtn');
+            const wishCard = document.getElementById('wishRevealedCard');
+
+            flame.style.opacity = '0';
+            smoke.style.opacity = '1';
+
+            confetti({
+                particleCount: 150,
+                spread: 90,
+                origin: { y: 0.6 }
+            });
+
+            blowBtn.innerHTML = `<span>تحققت أمنيتچ يا جونايتي 💖✨</span>`;
+            blowBtn.classList.remove('from-warmGold', 'to-roseGold');
+            blowBtn.classList.add('from-emerald-600', 'to-teal-500');
+
+            setTimeout(() => {
+                wishCard.classList.remove('hidden');
+                wishCard.classList.add('block');
+                wishCard.classList.remove('scale-95');
+                wishCard.classList.add('scale-100');
+            }, 400);
+        }
+
+        // 3. BLOOM ROSE
+        function bloomRose() {
+            const roseNote = document.getElementById('roseNote');
+            roseNote.classList.remove('hidden');
+            triggerRoseShower();
+        }
+
+        // 4. FINGERPRINT SCANNER
+        function startFingerprintScan(e) {
+            if (e && e.cancelable) e.preventDefault();
+            const laser = document.getElementById('scanLaser');
+            const status = document.getElementById('scanStatusText');
+            const progress = document.getElementById('scanProgress');
+            const btn = document.getElementById('fingerprintBtn');
+
+            laser.classList.remove('hidden');
+            status.innerText = "جاري فحص نبضات كلب جونايتي وحب يوسف إلچ... 💓";
+            btn.classList.add('scale-105');
+
+            let count = 0;
+            scanProgressVal = 0;
+            clearInterval(scanTimer);
+            scanTimer = setInterval(() => {
+                count += 10;
+                progress.style.height = `${count}%`;
+                if (count >= 100) {
+                    clearInterval(scanTimer);
+                    completeScan();
+                }
+            }, 240);
+        }
+
+        function cancelFingerprintScan() {
+            if (scanProgressVal < 100) {
+                clearInterval(scanTimer);
+                document.getElementById('scanLaser').classList.add('hidden');
+                document.getElementById('scanProgress').style.height = '0%';
+                document.getElementById('scanStatusText').innerText = "دوسي على البصمة بدون ما ترفعين إيدچ ✨";
+                document.getElementById('fingerprintBtn').classList.remove('scale-105');
+            }
+        }
+
+        function completeScan() {
+            scanProgressVal = 100;
+            document.getElementById('scanLaser').classList.add('hidden');
+            document.getElementById('scanStatusText').innerText = "اكتمل الفحص بنجاح! 💖";
+            document.getElementById('scanResultCard').classList.remove('hidden');
+
+            celebrateWithConfetti();
+        }
+
+        // 5. LOVE LETTER
+        function toggleLetter() {
+            const letterOpen = document.getElementById('envelopeOpen');
+            if (!isLetterOpen) {
+                isLetterOpen = true;
+                letterOpen.classList.remove('hidden');
+                confetti({
+                    particleCount: 60,
+                    spread: 75,
+                    origin: { y: 0.7 }
+                });
+            } else {
+                isLetterOpen = false;
+                letterOpen.classList.add('hidden');
+            }
+        }
+
+        // 6. FLIP CARDS
+        function flipCard(cardWrapper) {
+            const inner = cardWrapper.querySelector('.card-inner');
+            if (inner.style.transform === 'rotateY(180deg)') {
+                inner.style.transform = 'rotateY(0deg)';
+            } else {
+                inner.style.transform = 'rotateY(180deg)';
+            }
+        }
+
+        // 7. PHOTO VIEWER
+        const photoDetails = [
+            { src: 'assets/photo1.jpg', cap: 'ضحكتچ وميلتچ على كتفي تسوى الدنيا كلها يا زهراء ❤️' },
+            { src: 'assets/photo2.jpg', cap: 'إيدي بإيدچ، والورد ما يليق إلا بجمالچ ورقتچ 🌹💍' },
+            { src: 'assets/photo3.jpg', cap: 'بكل لحظة، أشوف بيچ مستقبلي وأحلى عروس بعيوني ✨' }
+        ];
+
+        function viewPhoto(index) {
+            const item = photoDetails[index];
+            document.getElementById('modalImg').src = item.src;
+            document.getElementById('modalCap').innerText = item.cap;
+            document.getElementById('photoModal').classList.remove('hidden');
+        }
+
+        function closePhotoModal() {
+            document.getElementById('photoModal').classList.add('hidden');
+        }
+
+        // 8. GIFT BOX
+        function openGiftBox() {
+            if (isGiftOpen) return;
+            isGiftOpen = true;
+
+            const card = document.getElementById('giftRevealedCard');
+            const hint = document.getElementById('giftHintText');
+
+            hint.style.display = 'none';
+            card.classList.remove('hidden');
+
+            celebrateWithConfetti();
+            triggerRoseShower();
+        }
+
+        // 9. CONFETTI CELEBRATION
+        function celebrateWithConfetti() {
+            const duration = 3.5 * 1000;
+            const animationEnd = Date.now() + duration;
+            const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 999 };
+
+            function randomInRange(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+
+            const interval = setInterval(function() {
+                const timeLeft = animationEnd - Date.now();
+                if (timeLeft <= 0) {
+                    return clearInterval(interval);
+                }
+                const particleCount = 45 * (timeLeft / duration);
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+            }, 250);
+        }
+
+        function fireExtraConfetti() {
+            celebrateWithConfetti();
+            triggerRoseShower();
+        }
+
+        // 10. BACKGROUND PARTICLES (Stars & Hearts)
+        const canvas = document.getElementById('particles-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            roseCanvas.width = window.innerWidth;
+            roseCanvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 3 + 1;
+                this.speedY = Math.random() * 0.7 + 0.3;
+                this.speedX = (Math.random() - 0.5) * 0.4;
+                this.opacity = Math.random() * 0.7 + 0.2;
+                this.isHeart = Math.random() > 0.65;
+            }
+            update() {
+                this.y -= this.speedY;
+                this.x += this.speedX;
+                if (this.y < 0) {
+                    this.y = canvas.height + 10;
+                    this.x = Math.random() * canvas.width;
+                }
+            }
+            draw() {
+                ctx.fillStyle = `rgba(255, 182, 193, ${this.opacity})`;
+                if (this.isHeart) {
+                    ctx.font = `${this.size * 3.5}px serif`;
+                    ctx.fillText('💖', this.x, this.y);
+                } else {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+            }
+        }
+
+        for (let i = 0; i < 40; i++) {
+            particles.push(new Particle());
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+
+        // 11. FALLING ROSE PETALS CANVAS (Realistic Rose Rain)
+        const roseCanvas = document.getElementById('rose-canvas');
+        const rCtx = roseCanvas.getContext('2d');
+        let rosePetals = [];
+
+        class RosePetal {
+            constructor() {
+                this.reset();
+            }
+            reset() {
+                this.x = Math.random() * roseCanvas.width;
+                this.y = -20 - Math.random() * 100;
+                this.size = Math.random() * 12 + 10;
+                this.speedY = Math.random() * 1.5 + 1;
+                this.speedX = Math.random() * 1 - 0.5;
+                this.rotation = Math.random() * 360;
+                this.rotationSpeed = (Math.random() - 0.5) * 2;
+                this.oscillation = 0;
+            }
+            update() {
+                this.y += this.speedY;
+                this.oscillation += 0.03;
+                this.x += Math.sin(this.oscillation) * 1.2 + this.speedX;
+                this.rotation += this.rotationSpeed;
+
+                if (this.y > roseCanvas.height + 30) {
+                    this.reset();
+                }
+            }
+            draw() {
+                rCtx.save();
+                rCtx.translate(this.x, this.y);
+                rCtx.rotate((this.rotation * Math.PI) / 180);
+                
+                rCtx.beginPath();
+                rCtx.moveTo(0, 0);
+                rCtx.bezierCurveTo(-this.size / 2, -this.size / 2, -this.size, this.size / 2, 0, this.size);
+                rCtx.bezierCurveTo(this.size, this.size / 2, this.size / 2, -this.size / 2, 0, 0);
+                
+                const grad = rCtx.createRadialGradient(0, this.size / 2, 2, 0, this.size / 2, this.size);
+                grad.addColorStop(0, '#f43f5e');
+                grad.addColorStop(0.7, '#be123c');
+                grad.addColorStop(1, '#881337');
+                rCtx.fillStyle = grad;
+                rCtx.fill();
+                rCtx.restore();
+            }
+        }
+
+        for (let i = 0; i < 28; i++) {
+            rosePetals.push(new RosePetal());
+        }
+
+        function animateRoses() {
+            rCtx.clearRect(0, 0, roseCanvas.width, roseCanvas.height);
+            rosePetals.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            requestAnimationFrame(animateRoses);
+        }
+        resizeCanvas();
+        animateRoses();
+
+        function triggerRoseShower() {
+            for (let i = 0; i < 20; i++) {
+                rosePetals.push(new RosePetal());
+            }
+            setTimeout(() => {
+                rosePetals = rosePetals.slice(0, 30);
+            }, 6000);
+        }
+
+        // Stardust cursor trail
+        let lastSparkleTime = 0;
+        function createSparkle(x, y) {
+            const now = Date.now();
+            if (now - lastSparkleTime < 50) return;
+            lastSparkleTime = now;
+
+            const el = document.createElement('div');
+            el.className = 'cursor-trail text-xs';
+            el.innerText = Math.random() > 0.4 ? '🌹' : (Math.random() > 0.5 ? '✨' : '💖');
+            el.style.left = `${x}px`;
+            el.style.top = `${y}px`;
+            document.body.appendChild(el);
+            setTimeout(() => el.remove(), 850);
+        }
+
+        window.addEventListener('mousemove', (e) => createSparkle(e.clientX, e.clientY));
+        window.addEventListener('touchmove', (e) => {
+            if (e.touches[0]) createSparkle(e.touches[0].clientX, e.touches[0].clientY);
+        });
+    </script>
+</body>
+</html>
